@@ -11,6 +11,9 @@ $(document).ready(function() {
   $('.side a[href="'+path+'"]').css("font-weight", "bold");
   $('.side a[href="'+path+'"]').parents('.collapse').collapse('show');
 
+  // Move Table of Contents to Sidebar
+  //$('.maruku_toc').detach().appendTo('.menu')
+
   // Optimizely
   // https://www.optimizely.com/docs/api
   var exps = window['optimizely'].data.state.activeExperiments;
